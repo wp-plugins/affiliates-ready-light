@@ -63,10 +63,16 @@ See also: [Affiliates Ready! Light](http://www.itthinx.com/plugins/affiliates-re
 
 == Changelog ==
 
+= 1.0.1 =
+* WordPress 3.6 compatible
+
 = 1.0.0 =
 * Initial release, tested on WordPress 3.6-beta3, Ready! 0.3.2.9 and Affiliates 2.2.0.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* WordPress 3.6 compatible
 
 = 1.0.0 =
 * Initial release.
