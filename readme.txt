@@ -2,9 +2,9 @@
 Contributors: itthinx
 Donate link: http://www.itthinx.com/plugins/affiliates-ready-light
 Tags: ads, advertising, affiliate, affiliate marketing, affiliate plugin, affiliate tool, affiliates, bucks, contact form, crm, earn money, e-commerce, e-commerce, integration, lead, link, marketing, money, online sale, order, partner, referral, referral links, referrer, shopping cart, sales, shop, shopping cart, site, track, transaction, ready, ready ecommerce, wordpress
-Requires at least: 3.0
-Tested up to: 3.6
-Stable tag: 1.0.1
+Requires at least: 3.5.1
+Tested up to: 3.8
+Stable tag: 1.0.2
 License: GPLv3
 
 This plugin integrates Affiliates with Ready! Ecommerce Shopping Cart.
@@ -63,6 +63,9 @@ See also: [Affiliates Ready! Light](http://www.itthinx.com/plugins/affiliates-re
 
 == Changelog ==
 
+= 1.0.2 =
+* WordPress 3.8 compatible
+
 = 1.0.1 =
 * WordPress 3.6 compatible
 
@@ -70,6 +73,9 @@ See also: [Affiliates Ready! Light](http://www.itthinx.com/plugins/affiliates-re
 * Initial release, tested on WordPress 3.6-beta3, Ready! 0.3.2.9 and Affiliates 2.2.0.
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+* WordPress 3.8 compatible
 
 = 1.0.1 =
 * WordPress 3.6 compatible
