@@ -23,7 +23,7 @@
  * Description: Integrates Affiliates with Ready! Ecommerce
  * Author: itthinx
  * Author URI: http://www.itthinx.com/
- * Version: 1.0.1
+ * Version: 1.0.2
  */
 define( 'AFF_READY_LIGHT_PLUGIN_DOMAIN', 'affiliates-ready-light' );
 
