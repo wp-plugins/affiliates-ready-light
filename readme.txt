@@ -3,8 +3,8 @@ Contributors: itthinx
 Donate link: http://www.itthinx.com/plugins/affiliates-ready-light
 Tags: ads, advertising, affiliate, affiliate marketing, affiliate plugin, affiliate tool, affiliates, bucks, contact form, crm, earn money, e-commerce, e-commerce, integration, lead, link, marketing, money, online sale, order, partner, referral, referral links, referrer, shopping cart, sales, shop, shopping cart, site, track, transaction, ready, ready ecommerce, wordpress
 Requires at least: 3.5.1
-Tested up to: 3.8
-Stable tag: 1.0.2
+Tested up to: 4.1.1
+Stable tag: 1.0.3
 License: GPLv3
 
 This plugin integrates Affiliates with Ready! Ecommerce Shopping Cart.
@@ -17,9 +17,11 @@ With this integration plugin, referrals are created automatically for your affil
 
 The plugin allows you to set a referral (commission) rate so that your affiliates get credited with a referral based on a percentage of each sale's total net amount.
 
+Please note that this integration does not support automatic synchronization between the order status and referrals in any of the Affiliates plugins.
+
 Requirements:
 
-- [Ready! Ecommerce](http://wordpress.org/extend/plugins/ready-ecommerce)
+- [Ready! Ecommerce](http://http://readyshoppingcart.com)
 - [Affiliates](http://wordpress.org/extend/plugins/affiliates)
 - [Affiliates Ready! Ecommerce Integration Light](http://www.itthinx.com/plugins/affiliates-ready-light) (this plugin)
 
@@ -34,7 +36,7 @@ You are welcome to [follow @itthinx on Twitter](http://twitter.com/itthinx) for 
 
 == Installation ==
 
-1. Install and activate the [Ready! Ecommerce](http://wordpress.org/extend/plugins/ready-ecommerce) plugin. Configure your shop and create products.
+1. Install and activate the [Ready! Ecommerce](http://http://readyshoppingcart.com) plugin. Configure your shop and create products.
 2. Install and activate the [Affiliates](http://wordpress.org/extend/plugins/affiliates) plugin. Use the default settings or configure it to your needs.
 3. Install and activate the [Affiliates Ready! Ecommerce Integration Light](http://www.itthinx.com/plugins/affiliates-ready-light) plugin.
 4. A new *Ready! Light* menu item will appear under the *Affiliates* menu in WordPress. Set the referral rate for your affiliates there.
@@ -63,6 +65,9 @@ See also: [Affiliates Ready! Light](http://www.itthinx.com/plugins/affiliates-re
 
 == Changelog ==
 
+= 1.0.3 =
+* Fixed: Referrals not created with PayPal checkout. Added a dispatcher hook on orderPost to cover cases where onSuccessOrder does not work to create a referral.
+
 = 1.0.2 =
 * WordPress 3.8 compatible
 
@@ -73,6 +78,9 @@ See also: [Affiliates Ready! Light](http://www.itthinx.com/plugins/affiliates-re
 * Initial release, tested on WordPress 3.6-beta3, Ready! 0.3.2.9 and Affiliates 2.2.0.
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+* Fixes referrals not created with PayPal checkout. Tested with Ready 0.6.1, WordPress 4.1.1 and Affiliates 2.8.0.
 
 = 1.0.2 =
 * WordPress 3.8 compatible
