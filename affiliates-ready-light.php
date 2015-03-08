@@ -104,6 +104,7 @@ class Affiliates_Ready_Light_Integration {
 	public static function wp_init() {
 		if ( class_exists( 'dispatcher' ) ) {
 			dispatcher::addAction( 'onSuccessOrder', array( __CLASS__, 'onSuccessOrder' ) );
+			dispatcher::addAction( 'orderPost', array( __CLASS__, 'orderPost' ) );
 		}
 	}
 
@@ -216,6 +217,16 @@ class Affiliates_Ready_Light_Integration {
 			'</p>' .
 			'</div>' .
 			$footer;
+	}
+
+	public static function orderPost( $order_id ) {
+		error_log(__METHOD__ . ' order_id = ' . var_export($order_id,true)); // @todo remove
+		$order = new orderModel();
+		
+		if ( $order = $order->get( $order_id ) ) {
+			error_log(__METHOD__ . ' order = ' . var_export($order,true)); // @todo remove
+			self::onSuccessOrder( $order );
+		}
 	}
 
 	/**
