@@ -11,6 +11,8 @@ This plugin integrates Affiliates with Ready! Ecommerce Shopping Cart.
 
 == Description ==
 
+_Please note_ that we provide this latest update as a courtesy for existing users. Support for this integration is going to be __dropped__ and we recommend to use any of the other supported e-commerce systems.
+
 This plugin integrates [Affiliates](http://www.itthinx.com/plugins/affiliates/) with [Ready! Ecommerce](http://readyshoppingcart.com).
 
 With this integration plugin, referrals are created automatically for your affiliates when sales are made.
